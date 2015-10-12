@@ -88,6 +88,7 @@ module Krill
         padding_box do
           yield
         end
+        return { height: bounds.height, width: bounds.right, top: bounds.absolute_top, left: bounds.absolute_left }
       end
     end
 
